@@ -1,7 +1,17 @@
-style="
+.button{
 	backgroundColor: "white";
-	padding: 10px 30px;
-	border-radius: 8px;
+	padding: 100px 80px;
+	border-radius: 10px;
 	text-decoration: none;
 	border: 2px solid black;
-"
+	display: inline-block;
+}
+
+#red { background-color: red; }
+#blue { background-color: blue; }
+#yellow { background-color: yellow; }
+#purple { background-color: purple; }
+#white { background-color: white; }
+#black { background-color: black; 
+	   border: 2px solid white;
+	   }
