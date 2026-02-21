@@ -1,14 +1,18 @@
-const buttons = document.querySelectorAll(".button")
-const body = document.querySelector("body")
+// 1.Select all buttons
+const buttons = document.querySelectorAll('.button')
+const body = document.querySelector('body')
 
-buttons.forEach(function(button){
-	console.log(button);
-	button.addEventListener('click', function(event){
-		console.log(event);
-		console.log(event.target);
-		if(event.target.id === "red"){
-			body.style.backgroundColor = "event.target";
-		}
+// event are written in function and perform activity
+// As we have node list from querySelector thus we can use forEach()
+// 2. Iterate over buttons
+buttons.forEach(button => {
+	// 3. Add click event
+	button.addEventListener("click", (event) => {
+		// 4. Change backgroundcolor
+		// specially for black button
+		document.getElementById("black").style.color = event.target.id;
+		// for all other buttons
+		body.style.backgroundColor = event.target.id;
+		body.style.color = event.target.id;
 	});
 });
-  
